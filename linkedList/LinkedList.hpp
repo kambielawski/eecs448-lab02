@@ -110,11 +110,11 @@ bool LinkedList<T>::removeBack()
 		}
 		delete lastNode;
 		isRemoved = true;
+		m_size--;
 	}
 	if (secondintoLast != nullptr) {
 		secondintoLast->setNext(nullptr);
 	}
-	m_size--;
 	return(isRemoved);
 }
 
